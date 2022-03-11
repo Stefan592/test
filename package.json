@@ -1,0 +1,44 @@
+{
+  "name": "iobroker.template",
+  "version": "0.0.1",
+  "description": "Template for adapter development",
+  "author": {
+    "name": "Author",
+    "email": "author@mail.com"
+  },
+  "homepage": "https://github.com/Author/ioBroker.template",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "template",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Author/ioBroker.template"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@alcalzone/release-script": "^2.2.2",
+    "@iobroker/adapter-dev": "^1.0.0",
+    "@iobroker/testing": "^2.5.4"
+  },
+  "main": "widgets/template.html",
+  "files": [
+    "widgets/",
+    "www/",
+    "io-package.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test:package": "mocha test/package --exit",
+    "test": "npm run test:package",
+    "translate": "translate-adapter",
+    "release": "release-script"
+  },
+  "bugs": {
+    "url": "https://github.com/Author/ioBroker.template/issues"
+  },
+  "readmeFilename": "README.md"
+}
